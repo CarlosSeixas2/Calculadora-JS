@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #e7dcdc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #302f2f;
+}
+
+h1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    font-size: 35px;
+    margin-top: 19px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-celular {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(7, 80px);
+    height: 560px;
+    width: 300px;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.visor-info {
+    background-color: rgba(#202020, 0.7);
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    /* border: 2px solid #6b6767; */
+    width: 100%;
+    /* border-radius: 1px; */
+}
+
+.resultado {
+    height: 78px;
+    width: 297px; 
+    border: none;
+    box-shadow: none;
+    border-radius: 6px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    color: #202020;
+    font-size: 35px;
+}
+
+.resultado:focus{
+    outline: none;
+}
+
+/* configurando teclas */
+#tecla {
+    height: 80px;
+    width: 75px;
+    border: none;
+    border-radius: 6px;
+    background-color: #202020;
+}
+
+#igual {
+    height: 80px;
+    width: 75px;
+    border: none;
+    border-radius: 6px;
+    background-color: orangered;
+}
+
+#tecla:hover {
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+    border: none;
+}
+
+.n0 {
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+}
+
+.n1 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+.n2 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.n3 {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+}
+
+.n4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.n5 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.n6 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+.n7{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.n8 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.n9 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.opmult {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+
+.opred {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+}
+
+.opsoma {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+    background-color: orangered;
+}
+
+.opdiv {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.oplado1 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.opclear {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.oplado2 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.opigual {
+    grid-column: 4 / 5;
+    grid-row: 7 / 8;
+}
+
+.opvir {
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+}
+
+.oporc {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8; 
+}
